@@ -3,67 +3,80 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./js/main.js" defer></script>
         <title>PizzaPoint</title>
     </head>
     <body>
-        <h1>Welcome to Pizza Point!</h1>
-        <h2>Build Your Order</h2>
-        <form action="">
-            <!-- Size -->
-            <label for="size">Size:</label>
-            <input type="radio" name="size" id="small" value="Small" />
-            <label for="small">Small</label>
-            <input type="radio" name="size" id="medium" value="Medium" />
-            <label for="medium">Medium</label>
-            <input type="radio" name="size" id="large" value="Large" />
-            <label for="large">Large</label>
-            <br />
+        <div class="wrapper">
+            <h1>Welcome to Pizza Point!</h1>
+            <h2>Build Your Order</h2>
+            <form id="form">
+                <!-- Size -->
+                <label for="size">Size:</label>
+                <input type="radio" name="size" id="small" value="Small" required />
+                <label for="small">Small</label>
+                <input type="radio" name="size" id="medium" value="Medium" />
+                <label for="medium">Medium</label>
+                <input type="radio" name="size" id="large" value="Large" />
+                <label for="large">Large</label>
+                <br />
 
-            <!-- Crust -->
-            <label for="crust">Crust:</label>
-            <input type="radio" name="crust" id="thin" value="Thin" />
-            <label for="thin">Thin</label>
-            <input type="radio" name="crust" id="thick" value="Thick" />
-            <label for="thick">Thick</label>
-            <input type="radio" name="crust" id="stuffed" value="Stuffed" />
-            <label for="stuffed">Stuffed</label>
-            <br />
+                <!-- Crust -->
+                <label for="crust">Crust:</label>
+                <input type="radio" name="crust" id="thin" value="Thin" required />
+                <label for="thin">Thin</label>
+                <input type="radio" name="crust" id="thick" value="Thick" />
+                <label for="thick">Thick</label>
+                <input type="radio" name="crust" id="stuffed" value="Stuffed" />
+                <label for="stuffed">Stuffed</label>
+                <br />
 
-            <!-- Toppings -->
-            <label for="toppings">Toppings:</label>
-            <input type="checkbox" name="toppings" id="pepperoni" value="Pepperoni" />
-            <label for="pepperoni">Pepperoni</label>
-            <input type="checkbox" name="toppings" id="cheese" value="Cheese" />
-            <label for="cheese">Extra Cheese</label>
-            <input type="checkbox" name="toppings" id="sausage" value="Sausage" />
-            <label for="sausage">Sausage</label>
-            <input type="checkbox" name="toppings" id="bacon" value="Bacon" />
-            <label for="bacon">Bacon</label>
-            <input type="checkbox" name="toppings" id="peppers" value="Peppers" />
-            <label for="peppers">Peppers</label>
-            <input type="checkbox" name="toppings" id="olives" value="Olives" />
-            <label for="olives">Olives</label>
-            <input type="checkbox" name="toppings" id="mushrooms" value="Mushrooms" />
-            <label for="mushrooms">Mushrooms</label>
-            <input type="checkbox" name="toppings" id="onions" value="Onions" />
-            <label for="onions">Onions</label>
-            <br />
+                <!-- Toppings -->
+                <label for="toppings">Toppings:</label>
+                <input type="checkbox" name="toppings" id="pepperoni" value="Pepperoni" required />
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" name="toppings" id="cheese" value="Cheese" />
+                <label for="cheese">Cheese</label>
+                <input type="checkbox" name="toppings" id="sausage" value="Sausage" />
+                <label for="sausage">Sausage</label>
+                <input type="checkbox" name="toppings" id="bacon" value="Bacon" />
+                <label for="bacon">Bacon</label>
+                <input type="checkbox" name="toppings" id="peppers" value="Peppers" />
+                <label for="peppers">Peppers</label>
+                <input type="checkbox" name="toppings" id="olives" value="Olives" />
+                <label for="olives">Olives</label>
+                <input type="checkbox" name="toppings" id="mushrooms" value="Mushrooms" />
+                <label for="mushrooms">Mushrooms</label>
+                <input type="checkbox" name="toppings" id="onions" value="Onions" />
+                <label for="onions">Onions</label>
+                <br />
 
-            <!-- Sauce -->
-            <label for="sauce">Sauce:</label>
-            <input type="radio" name="sauce" id="tomato" value="Tomato" />
-            <label for="tomato">Tomato</label>
-            <input type="radio" name="sauce" id="bbq" value="BBQ" />
-            <label for="bbq">BBQ</label>
-            <input type="radio" name="sauce" id="ranch" value="Ranch" />
-            <label for="ranch">Ranch</label>
-            <br />
+                <!-- Sauce -->
+                <label for="sauce">Sauce:</label>
+                <input type="radio" name="sauce" id="tomato" value="Tomato" />
+                <label for="tomato">Tomato</label>
+                <input type="radio" name="sauce" id="bbq" value="BBQ" />
+                <label for="bbq">BBQ</label>
+                <input type="radio" name="sauce" id="ranch" value="Ranch" />
+                <label for="ranch">Ranch</label>
+                <br />
 
-            <!-- Special Instructions -->
-            <label for="instructions">Special Instructions:</label>
-            <input type="text" name="instructions" id="instructions" />
-            <br />
-            <input type="button" value="Place Order" />
-        </form>
+                <!-- Special Instructions -->
+                <label for="instructions">Special Instructions:</label>
+                <input type="text" name="instructions" id="instructions" />
+                <br />
+                <button type="submit">Place Order</button>
+            </form>
+            <div class="order-confirmation">
+                <p id="order-number"></p>
+                <ul id="order-details">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
