@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/styles.css" />
         <script src="./js/main.js" defer></script>
         <title>PizzaPoint</title>
     </head>
@@ -33,7 +34,7 @@
 
                 <!-- Toppings -->
                 <label for="toppings">Toppings:</label>
-                <input type="checkbox" name="toppings" id="pepperoni" value="Pepperoni" required />
+                <input type="checkbox" name="toppings" id="pepperoni" value="Pepperoni" />
                 <label for="pepperoni">Pepperoni</label>
                 <input type="checkbox" name="toppings" id="cheese" value="Cheese" />
                 <label for="cheese">Cheese</label>
@@ -68,14 +69,8 @@
                 <button type="submit">Place Order</button>
             </form>
             <div class="order-confirmation">
-                <p id="order-number"></p>
-                <ul id="order-details">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <p id="orderConfirm"></p>
+                <ul id="orderDetails"></ul>
             </div>
         </div>
     </body>
